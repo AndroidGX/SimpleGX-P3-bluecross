@@ -235,13 +235,7 @@ unmount_all;
 
 ui_print " ";
 ui_print "       * * * * * * * * * * * * * * *     ";
-ui_print "       * DONE...                   *     ";
-ui_print "       *                           *     ";
-ui_print "       *     IN ORDER TO BOOT      *     ";
-ui_print "       *   DON'T FORGET TO FLASH   *     ";
-ui_print "       *    MAGISK RIGHT AFTER !   *     ";
-ui_print "       *                           *     ";
-ui_print "       *               ...ENJOY !  *     ";
+ui_print "       *           ENJOY !         *     ";
 ui_print "       * * * * * * * * * * * * * * *     ";
 ui_print " ";
 
