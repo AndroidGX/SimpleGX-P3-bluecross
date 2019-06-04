@@ -1,4 +1,4 @@
-# AnyKernel2 Ramdisk Mod Script
+# AnyKernel3 Ramdisk Mod Script
 # osm0sis @ xda-developers
 
 ## AnyKernel setup
@@ -9,13 +9,12 @@ do.devicecheck=1
 do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
-do.system_blobs=0
 device.name1=blueline
-device.name2=crosshatch
+device.name2=
 device.name3=
 device.name4=
 device.name5=
-supported.versions=
+supported.versions=9
 '; } # end properties
 
 # shell variables
@@ -26,13 +25,12 @@ ramdisk_compression=auto;
 
 ## AnyKernel methods (DO NOT CHANGE)
 # import patching functions/variables - see for reference
-. /tmp/anykernel/tools/ak2-core.sh;
+. tools/ak3-core.sh;
 
 
 ## AnyKernel file attributes
 # set permissions/ownership for included ramdisk files
 chmod -R 750 $ramdisk/*;
-chmod -R 755 $ramdisk/sbin;
 chown -R root:root $ramdisk/*;
 
 
@@ -44,6 +42,5 @@ dump_boot;
 # end ramdisk changes
 
 write_boot;
-
 ## end install
 
